@@ -48,10 +48,10 @@ function populateTextarea(){
     const savedMessageParsed = JSON.parse(savedMessage);
     
     if (savedMessageParsed){
-        formD = savedMessageParsed;
+        const formDat = savedMessageParsed;
         // console.log(formD);
-        refs.textarea.value = formD.message || "";
-        refs.input.value = formD.email || "";
+        refs.textarea.value = formDat.message || "";
+        refs.input.value = formDat.email || "";
   
     }}
 
